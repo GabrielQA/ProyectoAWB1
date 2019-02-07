@@ -54,9 +54,9 @@ include "Conexion_Twilio.php";
   </header>
   <section id="hero" class="wow fadeIn">
     <div class="hero-container">
-      <h1>Administrador <?php $_SESSION['usuario'];;?></h1>
+      <h1>Administrador <?php $_SESSION['usuario'];?></h1>
       <h2>Bienvenido</h2>
-      <a href="#get-started" class="btn-get-started scrollto">Vista Comentarios</a>
+      <a href="#get-started" class="btn-get-started scrollto">Vista de Canales</a>
       <div class="btns">
        <!-- <a href="#"><i class="fa fa-apple fa-3x"></i> App Store</a>
         <a href="#"><i class="fa fa-play fa-3x"></i> Google Play</a>
@@ -68,16 +68,34 @@ include "Conexion_Twilio.php";
 
     <div class="container">
       <div class="section-title text-center">
-        <h2>Elige un canal</h2>
-     
-        <h1><?php if(Conexion()==null){
-                CrearServicio();
-                }else{
-                  
-                }?></h1>
+        <h2>Area Administrador</h2>               
+<div><h1> <?php //Crear_Servicio();?></h1></div>
+<div><h1><?php //Ver_Servicio();?></h1></div>
+<div><h1><?php //Crear_Canal();?></h1></div>
+<div><h1><?php //Modificar_Canal();?></h1></div>
+<div><h1><?php //Eliminar_Canal();?></h1></div>
+<div><h1><?php //Ver_Canal();?></h1></div>
+
+
+<div class="container">  
+   </div>
+   <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+     <thead>
+      <tr>
+       <th>Canales</th>
+       <div align="right" style="margin-bottom:5px;">
+    <button type="button" name="add_button" id="add_button" class="btn btn-success btn-xs">Agregar Canal</button>
+       <th>Editar</th>
+       <th>Eliminar</th>
+      </tr>
+     </thead>
+    </table>
+   </div>
 
       </div>
     </div>
+        
 
     
 

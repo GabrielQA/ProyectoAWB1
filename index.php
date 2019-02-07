@@ -64,7 +64,17 @@
     <div class="container">
       <div class="section-title text-center">
         <h2>Elige un canal</h2>
-
+        <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+     <thead>
+      <tr>
+       <th>Entrar</th>
+       <th>Añadir Comentario</th>
+      </tr>
+     </thead>
+     <tbody>Canales </tbody>
+    </table>
+   </div>
       
 
 
