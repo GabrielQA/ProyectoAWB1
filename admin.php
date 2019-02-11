@@ -1,14 +1,16 @@
-<?php  session_start();
-include "Conexion_Twilio.php";
-?>
+<?php session_start();
+require "Clase_Canal.php";
+$cat = new Clase_Canal("variable");
+?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+<meta charset="utf-8">
   <title>Administrador</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
+  <link rel="stylesheet" href="css/estiloCanal.css">
 
   <!-- Favicons -->
   <link href="img/favicon.png" rel="icon">
@@ -54,7 +56,10 @@ include "Conexion_Twilio.php";
   </header>
   <section id="hero" class="wow fadeIn">
     <div class="hero-container">
-      <h1>Administrador <?php $_SESSION['usuario'];?></h1>
+      <h1>Administrador <?php echo $_SESSION['usuario'];
+      if( $_SESSION['usuario']!='Gabriel'){
+        header("Location:index.php");       
+      }?></h1>
       <h2>Bienvenido</h2>
       <a href="#get-started" class="btn-get-started scrollto">Vista de Canales</a>
       <div class="btns">
@@ -65,53 +70,44 @@ include "Conexion_Twilio.php";
     </div>
   </section>
   <section id="get-started" class="padd-section text-center wow fadeInUp">
-
     <div class="container">
       <div class="section-title text-center">
         <h2>Area Administrador</h2>               
-<div><h1> <?php //Crear_Servicio();?></h1></div>
-<div><h1><?php //Ver_Servicio();?></h1></div>
-<div><h1><?php //Crear_Canal();?></h1></div>
-<div><h1><?php //Modificar_Canal();?></h1></div>
-<div><h1><?php //Eliminar_Canal();?></h1></div>
-<div><h1><?php //Ver_Canal();?></h1></div>
-
-
+<form action="Acciones.php" method="post">
 <div class="container">  
    </div>
    <div class="table-responsive">
     <table class="table table-bordered table-striped">
      <thead>
       <tr>
-       <th>Canales</th>
        <div align="right" style="margin-bottom:5px;">
-    <button type="button" name="add_button" id="add_button" class="btn btn-success btn-xs">Agregar Canal</button>
-       <th>Editar</th>
-       <th>Eliminar</th>
-      </tr>
+       <li><a href="" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span><button type="button" name="add_button" id="add_button" class="btn btn-success btn-xs">Ingresar Canal</button></a>
+					<ul class="dropdown-menu">
+						<div style="width:200px 200px;">
+							<div class="panel panel-primary">
+              <h5><a href="" class="scrollto"><span>Nombre</span> del</a><span> Canal</span></h5>
+                  <input type="text" class="form-control" id="nombre" name="nombre">
+                  <a href="" style="color:white; list-style:none;"></a><input  href="" type="submit" onclick="" class="btn btn-success" style="float:right;" id="Btnadd" value="Agregar">
+                </div>
+							</div>
+						</div>
+					</ul>
+        </li>
      </thead>
     </table>
    </div>
-
+   <tbody>
+    </tr>
+  </tbody>
+   </form>
+   <h2>Canales</h2>
+   <?php echo $cat->Ver_Canal();?>
       </div>
     </div>
-        
-
-    
-
       </div>
     </div>
-
   </section>
-
-  
- 
-
-
   </footer>
-
-
-
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
   <!-- JavaScript Libraries -->

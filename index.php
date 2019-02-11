@@ -1,4 +1,7 @@
-
+<?php 
+require "Clase_Canal.php";
+$cat = new Clase_Canal("nombre");
+?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,16 +66,15 @@
 
     <div class="container">
       <div class="section-title text-center">
-        <h2>Elige un canal</h2>
+        <h2>Elegir un canal</h2>
         <div class="table-responsive">
     <table class="table table-bordered table-striped">
      <thead>
       <tr>
        <th>Entrar</th>
-       <th>Añadir Comentario</th>
       </tr>
      </thead>
-     <tbody>Canales </tbody>
+     <tbody>Canales </tbody><?php echo $cat->Ver_Canal();?>
     </table>
    </div>
       

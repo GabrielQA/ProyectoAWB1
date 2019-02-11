@@ -1,14 +1,19 @@
 <?php
+//session_start();
+
 // Update the path below to your autoload.php,
 // see https://getcomposer.org/doc/01-basic-usage.md
 require __DIR__.'/twilio-php-master/Twilio/autoload.php';
 require __DIR__.'/twilio-php-master/vendor/autoload.php';
+//require "admin.php";
 use Twilio\Rest\Client;
+
+//$Nombre=$_POST["nombre"];
 
 //Servicio CRUD
 
 //Crear Servicio
-function Crear_Servicio(){
+/*function Crear_Servicio(){
     $sid    = "ACe3cee161eb435c1458abd6b02678e24f";
     $token  = "232c491053bb1103232a62ecfb1584de";
     $twilio = new Client($sid, $token);
@@ -17,11 +22,10 @@ function Crear_Servicio(){
                                 ->create("Servicio_Twilio");
     
     print($service->sid);
-    
-}
+}*/
 
 //Vista de los servicios creados
-function Ver_Servicio(){
+/*function Ver_Servicio(){
     $sid    = "ACe3cee161eb435c1458abd6b02678e24f";
 $token  = "232c491053bb1103232a62ecfb1584de";
 $twilio = new Client($sid, $token);
@@ -34,11 +38,11 @@ foreach ($services as $record) {
 }
 
 
-}
+}*/
 
 //Vista de los canales creados
 function Ver_Canal(){
-    $sid    = "ACe3cee161eb435c1458abd6b02678e24f";
+$sid    = "ACe3cee161eb435c1458abd6b02678e24f";
 $token  = "232c491053bb1103232a62ecfb1584de";
 $twilio = new Client($sid, $token);
 
@@ -53,19 +57,21 @@ foreach ($channels as $record) {
 
 //Crear un canal
 function Crear_Canal(){
+    //Variables con datos adquiridos mediante el metodo POST utilizadas para Crear un nuevo canal
+    //Variables con datos adquiridos mediante el metodo POST utilizadas para (Modificar) un canal 
     $sid    = "ACe3cee161eb435c1458abd6b02678e24f";
     $token  = "232c491053bb1103232a62ecfb1584de";
     $twilio = new Client($sid, $token);
-    
+
     $channel = $twilio->chat->v2->services("IS4450342d288b4f36bf624ae84d0537f8")
                                 ->channels
-                                ->create(array("friendlyName" => "Futbol"));
-    
-    print($channel->sid);
+                                ->create(array("friendlyName" => $Nombre));
+    print($channel->friendlyName);
+    //header("Location:admin.php");
 }
 
 //Modificar un Canal
-/*
+
 function Modificar_Canal(){
     $sid    = "ACe3cee161eb435c1458abd6b02678e24f";
     $token  = "232c491053bb1103232a62ecfb1584de";
@@ -80,7 +86,7 @@ function Modificar_Canal(){
     
     print($channel->friendlyName);
 }
-*/
+
 //Eliminar un Canal
 function Eliminar_Canal(){
     $sid    = "ACe3cee161eb435c1458abd6b02678e24f";
