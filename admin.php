@@ -1,6 +1,6 @@
 <?php session_start();
 require "Clase_Canal.php";
-$cat = new Clase_Canal("variable");
+$cat = new Clase_Canal("variable","variableM");
 ?> 
 <!DOCTYPE html>
 <html lang="en">

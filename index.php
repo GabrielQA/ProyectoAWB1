@@ -1,11 +1,11 @@
 <?php 
-require "Clase_Canal.php";
-$cat = new Clase_Canal("nombre");
+require "Clase_Usuarios.php";
+$cat = new Clase_Usuarios("variable","variableM","Usuario");
 ?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+   <meta charset="utf-8">
   <title>ApiGaboQA</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
@@ -33,7 +33,6 @@ $cat = new Clase_Canal("nombre");
 </head>
 
 <body>
-
   <header id="header" class="header header-hide">
     <div class="container">
 
@@ -54,7 +53,7 @@ $cat = new Clase_Canal("nombre");
     <div class="hero-container">
       <h1>Apis</h1>
       <h2>Bienvenido</h2>
-      <a href="#get-started" class="btn-get-started scrollto">Añadir comentario</a>
+      <a href="#get-started" class="btn-get-started scrollto">Unirme a un Canal</a>
       <div class="btns">
        <!-- <a href="#"><i class="fa fa-apple fa-3x"></i> App Store</a>
         <a href="#"><i class="fa fa-play fa-3x"></i> Google Play</a>
@@ -71,10 +70,10 @@ $cat = new Clase_Canal("nombre");
     <table class="table table-bordered table-striped">
      <thead>
       <tr>
-       <th>Entrar</th>
+       <th>Canales</th>
       </tr>
      </thead>
-     <tbody>Canales </tbody><?php echo $cat->Ver_Canal();?>
+     <?php echo $cat->Canal_Usuario();?>
     </table>
    </div>
       
