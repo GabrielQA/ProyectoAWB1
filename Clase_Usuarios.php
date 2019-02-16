@@ -9,12 +9,15 @@ class Clase_Usuarios{
     public $variable;
     public $variableM;
     public $Usuario;
+    public $Mensaje;
+
 
     //Metodo Constructor de la clase Canal
-    function __construct($variable,$variableM,$Usuario){
+    function __construct($variable,$variableM,$Usuario,$Mensaje){
         $this->variable= $variable;    
         $this->variableM= $variableM;      
-        $this->Usuario= $Usuario;      
+        $this->Usuario= $Usuario;     
+        $this->Mensaje= $Mensaje;     
     }
    
     //--------------------------------------------------------------------------Seccion Canal---------------------------------------------------------------------------------------
@@ -87,6 +90,51 @@ class Clase_Usuarios{
         foreach ($members as $record) {
             print($record->identity."--");        
         }    
+    }
+
+    //----------------------------------------------------------------------------Seccion Mensajes-------------------------------------------------------------------------
+
+    function EnviarMns(){
+        
+        if($this->Mensaje = "H"){
+           $this->Mensaje=" ";
+           $this->Usuario=" ";
+        }
+        $sid    = "ACe3cee161eb435c1458abd6b02678e24f";
+        $token  = "232c491053bb1103232a62ecfb1584de";
+        $twilio = new Client($sid, $token);
+        $message = $twilio->chat->v2->services("IS4450342d288b4f36bf624ae84d0537f8")
+                                    ->channels($this->variableM)
+                                    ->messages
+                                    ->create(array("body" => $this->Mensaje, "from"=>$this->Usuario));
+    
+                                    /*foreach($message->dateCreated as $date){
+                                        echo $date;
+                                   } */                  
+    
+    }
+    function ListarMns(){
+        
+        $sid    = "ACe3cee161eb435c1458abd6b02678e24f";
+        $token  = "232c491053bb1103232a62ecfb1584de";
+        $twilio = new Client($sid, $token);
+        
+         $messages = $twilio->chat->v2->services("IS4450342d288b4f36bf624ae84d0537f8")
+                                     ->channels($this->variableM)
+                                     ->messages
+                                     ->read();
+                                     
+
+     
+        foreach ($messages as $record){
+            $output='';
+            $output .= "
+            $record->from  $record->body
+            ";  
+            echo $output;
+        }
+        
+        
     }
     
     }

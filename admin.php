@@ -58,8 +58,8 @@ $cat = new Clase_Canal("variable","variableM");
     <div class="hero-container">
       <h1>Administrador <?php echo $_SESSION['usuario'];
       if( $_SESSION['usuario']!='Gabriel'){
-        header("Location:index.php");       
-      }?></h1>
+        header("Location:index.php");      
+      } ?></h1>
       <h2>Bienvenido</h2>
       <a href="#get-started" class="btn-get-started scrollto">Vista de Canales</a>
       <div class="btns">

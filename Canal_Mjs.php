@@ -1,16 +1,17 @@
 <?php 
     require "Clase_Usuarios.php";
-    $cat = new Clase_Usuarios("variable","variableM","Usuario");
+    $cat = new Clase_Usuarios("variable","variableM","Usuario","Mensaje");
     $variable = $_POST["nombre"];  
     $variableM = $_POST["id"];
     $Usuario = $_POST["Usuario"];  
+    $Mensaje="H";
     //$Cl=$_GET['Canal'];
     //$variableM = $Cl;
     //$variable="sd";
     
     //$clase = new Clase_Usuarios($variable,$variableM);
     //echo "<script>location.href='Canal_Mjs.php';</script>";
-    $clase = new Clase_Usuarios($variable,$variableM,$Usuario);
+    $clase = new Clase_Usuarios($variable,$variableM,$Usuario,$Mensaje);
    
 ?>
 <!DOCTYPE html>
@@ -53,6 +54,8 @@
         <input type='hidden' id='Usuario' name='Usuario' value='<?php echo $Usuario ?>'></input>
         <input type='hidden' id='nombre' name='nombre' value='<?php echo $variable ?>'></input>
         <input type='hidden' id='id' name='id' value='<?php echo $variableM ?>'></input>
+        <input type='hidden' id='Mensaje' name='Mensaje' value='<?php echo $Mensaje ?>'></input>
+
         <div class="row contact-content" data-aos="fade-up">
             <div class="contact-primary">
             <input type='submit' class='btn btn-primary'  value='Chatear'>                

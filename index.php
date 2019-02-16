@@ -1,6 +1,6 @@
 <?php 
 require "Clase_Usuarios.php";
-$cat = new Clase_Usuarios("variable","variableM","Usuario");
+$cat = new Clase_Usuarios("variable","variableM","Usuario","Mensaje");
 ?> 
 <!DOCTYPE html>
 <html lang="en">

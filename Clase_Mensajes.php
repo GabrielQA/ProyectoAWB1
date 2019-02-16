@@ -5,7 +5,7 @@ require __DIR__.'/twilio-php-master/vendor/autoload.php';
 require __DIR__.'/twilio-php-master/Services/Twilio.php';
 use Twilio\Rest\Client;
 //Se crea Clase Categorias con sus respectivos atributos publicos
-class Clase_Usuarios{
+class Clase_Mensajes{
     public $variable;
     public $variableM;
     public $Usuario;
@@ -17,13 +17,13 @@ class Clase_Usuarios{
         $this->Usuario= $Usuario;      
     }
    
-    //--------------------------------------------------------------------------Seccion Canal---------------------------------------------------------------------------------------
+    //--------------------------------------------------------------------------Seccion Mensajeria---------------------------------------------------------------------------------------
     function EnviarMns(){
-        $sid    = "ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
-        $token  = "your_auth_token";
+        $sid    = "ACe3cee161eb435c1458abd6b02678e24f";
+        $token  = "232c491053bb1103232a62ecfb1584de";
         $twilio = new Client($sid, $token);
         
-        $message = $twilio->chat->v2->services("ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+        $message = $twilio->chat->v2->services("IS4450342d288b4f36bf624ae84d0537f8")
                                     ->channels("CHXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
                                     ->messages
                                     ->create(array("body" => "MESSAGE"));

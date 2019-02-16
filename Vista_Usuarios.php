@@ -1,10 +1,13 @@
 
 <?php
 include "Clase_Usuarios.php";
+
 $variable = $_POST["nombre"];  
 $variableM = $_POST["id"];
 $Usuario = $_POST["Usuario"]; 
-$clase = new Clase_Usuarios($variable,$variableM,$Usuario);
+$Mensaje = $_POST["Mensaje"];
+
+$clase = new Clase_Usuarios($variable,$variableM,$Usuario,$Mensaje); 
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -44,17 +47,24 @@ $clase = new Clase_Usuarios($variable,$variableM,$Usuario);
         <div class="row contact-content" data-aos="fade-up">
             <div class="contact-primary">
                 <h3 class="h6">Chatea en linea</h3>
-                <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
+                <form action="Vista_Usuarios.php"  method="post"  novalidate="novalidate">
                     <fieldset>
                     <div class="form-field">
-                        <input name="contactName" type="text" id="contactName" placeholder="Comentario" value="" class="full-width">
+                        
+                        <input name="Mensaje" type="text" id="Mensaje" placeholder="Comentario" value="" class="full-width">
+                        <input type='hidden' id='nombre' name='nombre' value='<?php echo $variable ?>'></input>
+                        <input type='hidden' id='id' name='id' value='<?php echo $variableM ?>'></input>
+                        <input type='hidden' id='Usuario' name='Usuario' value='<?php echo $Usuario ?>'></input>
+
+
                     <div class="form-field">
-                        <button class="full-width btn--primary">Añadir</button>
                         </div>
+                        <input action="<?php $clase ->EnviarMns(); ?>" type='submit' class='btn btn-primary'  value='Agregar'>
+                      </form>                
                     </div>
+                    <textarea  readonly="readonly" rows="1100" cols="100"><?php  $clase ->ListarMns(); ?></textarea>
                     </fieldset>
-                </form>
-    <!-- Java Script
+    <!-- Java Script style="background: #d30f0ffa;"
     ================================================== -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
