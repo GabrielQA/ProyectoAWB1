@@ -31,7 +31,7 @@
                 <li><a href="index.php">Inicio</a></li>
                     <li><a>Integrantes del Canal</a></li>
                     <li><?php  $clase -> MostrarFN();?></li>
-                    <li><?php  //$clase->Unir_Usuario_Canal();?></li>
+                    <li><?php  $clase->Unir_Usuario_Canal();?></li>
 
                     <li>
                 </ul>    

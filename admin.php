@@ -43,8 +43,6 @@ $cat = new Clase_Canal("variable","variableM");
 
       <div id="logo" class="pull-left">
         <h1><a href="#body" class="scrollto"><span>Gabo</span>QA</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
       </div>
 
       <nav id="nav-menu-container">
