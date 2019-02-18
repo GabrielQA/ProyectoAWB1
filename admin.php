@@ -1,5 +1,6 @@
 <?php session_start();
 require "Clase_Canal.php";
+/*La vista principal del administrador donde se traen las funciones de la clase canal las cuales crean modifican muestran y eliminan los canales*/
 $cat = new Clase_Canal("variable","variableM");
 ?> 
 <!DOCTYPE html>
@@ -61,9 +62,6 @@ $cat = new Clase_Canal("variable","variableM");
       <h2>Bienvenido</h2>
       <a href="#get-started" class="btn-get-started scrollto">Vista de Canales</a>
       <div class="btns">
-       <!-- <a href="#"><i class="fa fa-apple fa-3x"></i> App Store</a>
-        <a href="#"><i class="fa fa-play fa-3x"></i> Google Play</a>
-        <a href="#"><i class="fa fa-windows fa-3x"></i> windows</a> -->
       </div>
     </div>
   </section>

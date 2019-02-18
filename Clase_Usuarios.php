@@ -21,6 +21,7 @@ class Clase_Usuarios{
         }
    
     //--------------------------------------------------------------------------Seccion Canal---------------------------------------------------------------------------------------
+        //Mostramos Los canales existentes
         function Canal_Usuario(){
         $sid    = "ACe3cee161eb435c1458abd6b02678e24f";
         $token  = "232c491053bb1103232a62ecfb1584de";
@@ -45,22 +46,9 @@ class Clase_Usuarios{
         }
         echo $output;
         }
-    //        echo"<script type=\"text/javascript\">alert('Re'); window.location='../Vista/Categoria.php';</script>";
-    /*
-    <form action='Unir_Usu.php' method='post'>
-    <li>$record->friendlyName<a href='' class='dropdown-toggle' data-toggle='dropdown'><span class='glyphicon glyphicon-user'></span><button type='submit' class='btn btn-warning'>Unirme</button></a>
-    <ul class='dropdown-menu'>
-    <h4><a href='' class='scrollto' value=''>Nombre de Usuario</a></h4>
-    <input type='text' class='form-control' id='nombre' name='nombre' placeholder='Usuario'>
-    <input type='hidden' id='id' name='id' value='$record->sid'></input>
-    <input type='submit' class='btn btn-primary'  value='Unirme'>
-    </ul>
-    </li>
-    </form>
-     */
-    
+    //        echo"<script type=\"text/javascript\">alert('Re'); window.location='../Vista/Categoria.php';</script>";    
     //----------------------------------------------------------------------------Seccion Usuarios-------------------------------------------------------------------------
-
+        //Listamos los usuarios del canal respectivo
         function Listar_Usuario_Canal(){
         //echo"<script type=\"text/javascript\">alert('Re'); window.location='Canal_Mjs.php';</script>";
         $sid    = "ACe3cee161eb435c1458abd6b02678e24f";
@@ -71,6 +59,7 @@ class Clase_Usuarios{
         print($record->identity."   " );
         }        
         }
+        //Metodo que utilizamos para añadir los usuarios al canal
         function  Unir_Usuario_Canal(){
         $sid    = "ACe3cee161eb435c1458abd6b02678e24f";
         $token  = "232c491053bb1103232a62ecfb1584de";
@@ -78,6 +67,7 @@ class Clase_Usuarios{
         $member = $twilio->chat->v2->services("IS4450342d288b4f36bf624ae84d0537f8")->channels($this->variableM)->members->create($this->Usuario);       
         print($member->identity);
         }
+        //Mostramos los usuarios añadidos al respectivo canal
         function MostrarFN(){
         $sid    = "ACe3cee161eb435c1458abd6b02678e24f";
         $token  = "232c491053bb1103232a62ecfb1584de";
@@ -91,6 +81,7 @@ class Clase_Usuarios{
         }    
         }
     //----------------------------------------------------------------------------Seccion Mensajes-------------------------------------------------------------------------
+        //Enviamos los mensajes respectivos al canal designado
         function EnviarMns(){
       if($this->Mensaje != "H"){
         $sid    = "ACe3cee161eb435c1458abd6b02678e24f";
@@ -107,7 +98,8 @@ class Clase_Usuarios{
             echo $date;
             } */
                      
-    }
+        }
+        //Listamos todos los mensajes ingresados en el canal 
         function ListarMns(){
         $sid    = "ACe3cee161eb435c1458abd6b02678e24f";
         $token  = "232c491053bb1103232a62ecfb1584de";
