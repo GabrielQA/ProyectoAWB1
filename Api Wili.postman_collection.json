@@ -1,0 +1,422 @@
+{
+	"id": "e02b5049-4ca2-4ea3-9025-1700a7fbd9a5",
+	"name": "Api Wili",
+	"description": "Proyecto de programacion web2 #1",
+	"order": [
+		"59f60ca7-2d2c-983b-e621-2bd31954c1fd",
+		"d7b37f39-a97e-0eb6-3eaf-87679dbf1a69",
+		"93b269e6-c1a7-3150-f6ed-8f5910583c5d",
+		"113254e9-7c0e-ace2-5133-b32b0b7a905e",
+		"80cf919c-6e0d-f20a-e74a-2170652c9eaf",
+		"f2207c9d-9b8d-7d31-7059-2314d33b6da4",
+		"98fb7040-d317-0a32-7495-4c4ca0a5c022",
+		"f8dfd2e3-fa32-ddc7-1e98-d261985da449",
+		"0da476d6-1f32-fe0d-db3f-43b220438dac",
+		"c43e6170-2c2b-b28e-61a1-0333ec23d97f"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1550440583148,
+	"owner": "6516614",
+	"public": false,
+	"requests": [
+		{
+			"id": "0da476d6-1f32-fe0d-db3f-43b220438dac",
+			"headers": "Authorization: Basic QUNlM2NlZTE2MWViNDM1YzE0NThhYmQ2YjAyNjc4ZTI0ZjoyMzJjNDkxMDUzYmIxMTAzMjMyYTYyZWNmYjE1ODRkZQ==\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic QUNlM2NlZTE2MWViNDM1YzE0NThhYmQ2YjAyNjc4ZTI0ZjoyMzJjNDkxMDUzYmIxMTAzMjMyYTYyZWNmYjE1ODRkZQ==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://chat.twilio.com/v2/Services/IS4450342d288b4f36bf624ae84d0537f8/Users",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "e02b5049-4ca2-4ea3-9025-1700a7fbd9a5",
+			"data": null,
+			"dataMode": "params",
+			"name": "https://chat.twilio.com/v2/Services/IS4450342d288b4f36bf624ae84d0537f8/Users",
+			"description": "Listar Usuarios",
+			"descriptionFormat": "html",
+			"time": 1550465561623,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "ACe3cee161eb435c1458abd6b02678e24f",
+				"password": "232c491053bb1103232a62ecfb1584de",
+				"saveToRequest": true
+			}
+		},
+		{
+			"id": "113254e9-7c0e-ace2-5133-b32b0b7a905e",
+			"headers": "Authorization: Basic QUNlM2NlZTE2MWViNDM1YzE0NThhYmQ2YjAyNjc4ZTI0ZjoyMzJjNDkxMDUzYmIxMTAzMjMyYTYyZWNmYjE1ODRkZQ==\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic QUNlM2NlZTE2MWViNDM1YzE0NThhYmQ2YjAyNjc4ZTI0ZjoyMzJjNDkxMDUzYmIxMTAzMjMyYTYyZWNmYjE1ODRkZQ==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://chat.twilio.com/v2/Services/IS4450342d288b4f36bf624ae84d0537f8/Channels",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "e02b5049-4ca2-4ea3-9025-1700a7fbd9a5",
+			"data": null,
+			"dataMode": "params",
+			"name": "https://chat.twilio.com/v2/Services/IS4450342d288b4f36bf624ae84d0537f8/Channels",
+			"description": "Get Listar Canales",
+			"descriptionFormat": "html",
+			"time": 1550450370834,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "ACe3cee161eb435c1458abd6b02678e24f",
+				"password": "232c491053bb1103232a62ecfb1584de",
+				"saveToRequest": true
+			}
+		},
+		{
+			"id": "59f60ca7-2d2c-983b-e621-2bd31954c1fd",
+			"headers": "Authorization: Basic QUNlM2NlZTE2MWViNDM1YzE0NThhYmQ2YjAyNjc4ZTI0ZjoyMzJjNDkxMDUzYmIxMTAzMjMyYTYyZWNmYjE1ODRkZQ==\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic QUNlM2NlZTE2MWViNDM1YzE0NThhYmQ2YjAyNjc4ZTI0ZjoyMzJjNDkxMDUzYmIxMTAzMjMyYTYyZWNmYjE1ODRkZQ==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://chat.twilio.com/v2/Services",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "ACe3cee161eb435c1458abd6b02678e24f",
+				"password": "232c491053bb1103232a62ecfb1584de",
+				"saveToRequest": true
+			},
+			"time": 1550451301742,
+			"name": "https://chat.twilio.com/v2/Services",
+			"description": "",
+			"collectionId": "e02b5049-4ca2-4ea3-9025-1700a7fbd9a5",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "80cf919c-6e0d-f20a-e74a-2170652c9eaf",
+			"headers": "Authorization: Basic QUNlM2NlZTE2MWViNDM1YzE0NThhYmQ2YjAyNjc4ZTI0ZjoyMzJjNDkxMDUzYmIxMTAzMjMyYTYyZWNmYjE1ODRkZQ==\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic QUNlM2NlZTE2MWViNDM1YzE0NThhYmQ2YjAyNjc4ZTI0ZjoyMzJjNDkxMDUzYmIxMTAzMjMyYTYyZWNmYjE1ODRkZQ==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://chat.twilio.com/v2/Services/IS4450342d288b4f36bf624ae84d0537f8/Channels/CH73412112320949159f1a7f7d5414e66a/Messages",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "e02b5049-4ca2-4ea3-9025-1700a7fbd9a5",
+			"data": null,
+			"dataMode": "params",
+			"name": "https://chat.twilio.com/v2/Services/IS4450342d288b4f36bf624ae84d0537f8/Channels/CH73412112320949159f1a7f7d5414e66a/Messages",
+			"description": "Todos los mensajes y usuarios ",
+			"descriptionFormat": "html",
+			"time": 1550451058175,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "93b269e6-c1a7-3150-f6ed-8f5910583c5d",
+			"headers": "Authorization: Basic QUNlM2NlZTE2MWViNDM1YzE0NThhYmQ2YjAyNjc4ZTI0ZjoyMzJjNDkxMDUzYmIxMTAzMjMyYTYyZWNmYjE1ODRkZQ==\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic QUNlM2NlZTE2MWViNDM1YzE0NThhYmQ2YjAyNjc4ZTI0ZjoyMzJjNDkxMDUzYmIxMTAzMjMyYTYyZWNmYjE1ODRkZQ==",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://chat.twilio.com/v2/Services/IS4450342d288b4f36bf624ae84d0537f8/Channels",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "FriendlyName",
+					"value": "Cambio",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1550465453254,
+			"name": "https://chat.twilio.com/v2/Services/IS4450342d288b4f36bf624ae84d0537f8/Channels",
+			"description": "",
+			"collectionId": "e02b5049-4ca2-4ea3-9025-1700a7fbd9a5",
+			"responses": []
+		},
+		{
+			"id": "98fb7040-d317-0a32-7495-4c4ca0a5c022",
+			"headers": "Authorization: Basic QUNlM2NlZTE2MWViNDM1YzE0NThhYmQ2YjAyNjc4ZTI0ZjoyMzJjNDkxMDUzYmIxMTAzMjMyYTYyZWNmYjE1ODRkZQ==\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic QUNlM2NlZTE2MWViNDM1YzE0NThhYmQ2YjAyNjc4ZTI0ZjoyMzJjNDkxMDUzYmIxMTAzMjMyYTYyZWNmYjE1ODRkZQ==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://chat.twilio.com/v2/Services/IS4450342d288b4f36bf624ae84d0537f8/Channels/CH73412112320949159f1a7f7d5414e66a",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "e02b5049-4ca2-4ea3-9025-1700a7fbd9a5",
+			"data": [
+				{
+					"key": "FriendlyName",
+					"value": "MyChannel",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "https://chat.twilio.com/v2/Services/IS4450342d288b4f36bf624ae84d0537f8/Channels/CH73412112320949159f1a7f7d5414e66a",
+			"description": "Eliminar CANAL",
+			"descriptionFormat": "html",
+			"time": 1550451825066,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "ACe3cee161eb435c1458abd6b02678e24f",
+				"password": "232c491053bb1103232a62ecfb1584de",
+				"saveToRequest": true
+			}
+		},
+		{
+			"id": "c43e6170-2c2b-b28e-61a1-0333ec23d97f",
+			"headers": "Content-Type: application/x-www-form-urlencoded\nAuthorization: Basic QUNlM2NlZTE2MWViNDM1YzE0NThhYmQ2YjAyNjc4ZTI0ZjoyMzJjNDkxMDUzYmIxMTAzMjMyYTYyZWNmYjE1ODRkZQ==\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic QUNlM2NlZTE2MWViNDM1YzE0NThhYmQ2YjAyNjc4ZTI0ZjoyMzJjNDkxMDUzYmIxMTAzMjMyYTYyZWNmYjE1ODRkZQ==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://chat.twilio.com/v2/Services/IS4450342d288b4f36bf624ae84d0537f8/Users ",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "e02b5049-4ca2-4ea3-9025-1700a7fbd9a5",
+			"data": [
+				{
+					"key": "Identity",
+					"value": "GAbo",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "https://chat.twilio.com/v2/Services/IS4450342d288b4f36bf624ae84d0537f8/Users ",
+			"description": "Agregar Usuario",
+			"descriptionFormat": "html",
+			"time": 1550467616727,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "ACe3cee161eb435c1458abd6b02678e24f",
+				"password": "232c491053bb1103232a62ecfb1584de",
+				"saveToRequest": true
+			}
+		},
+		{
+			"id": "d7b37f39-a97e-0eb6-3eaf-87679dbf1a69",
+			"headers": "Authorization: Basic QUNlM2NlZTE2MWViNDM1YzE0NThhYmQ2YjAyNjc4ZTI0ZjoyMzJjNDkxMDUzYmIxMTAzMjMyYTYyZWNmYjE1ODRkZQ==\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic QUNlM2NlZTE2MWViNDM1YzE0NThhYmQ2YjAyNjc4ZTI0ZjoyMzJjNDkxMDUzYmIxMTAzMjMyYTYyZWNmYjE1ODRkZQ==",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://chat.twilio.com/v2/Services/IS4450342d288b4f36bf624ae84d0537f8/Channels",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "FriendlyName",
+					"value": "MyChannel",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1550449498376,
+			"name": "https://chat.twilio.com/v2/Services/IS4450342d288b4f36bf624ae84d0537f8/Channels",
+			"description": "",
+			"collectionId": "e02b5049-4ca2-4ea3-9025-1700a7fbd9a5",
+			"responses": []
+		},
+		{
+			"id": "f2207c9d-9b8d-7d31-7059-2314d33b6da4",
+			"headers": "Content-Type: application/x-www-form-urlencoded\nAuthorization: Basic QUNlM2NlZTE2MWViNDM1YzE0NThhYmQ2YjAyNjc4ZTI0ZjoyMzJjNDkxMDUzYmIxMTAzMjMyYTYyZWNmYjE1ODRkZQ==\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic QUNlM2NlZTE2MWViNDM1YzE0NThhYmQ2YjAyNjc4ZTI0ZjoyMzJjNDkxMDUzYmIxMTAzMjMyYTYyZWNmYjE1ODRkZQ==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://chat.twilio.com/v2/Services/IS4450342d288b4f36bf624ae84d0537f8/Channels/CH73412112320949159f1a7f7d5414e66a ",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "e02b5049-4ca2-4ea3-9025-1700a7fbd9a5",
+			"data": [
+				{
+					"key": "FriendlyName",
+					"value": "Canal",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "https://chat.twilio.com/v2/Services/IS4450342d288b4f36bf624ae84d0537f8/Channels/CH73412112320949159f1a7f7d5414e66a ",
+			"description": "Modificar Canal",
+			"descriptionFormat": "html",
+			"time": 1550451691994,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "f8dfd2e3-fa32-ddc7-1e98-d261985da449",
+			"headers": "Authorization: Basic QUNlM2NlZTE2MWViNDM1YzE0NThhYmQ2YjAyNjc4ZTI0ZjoyMzJjNDkxMDUzYmIxMTAzMjMyYTYyZWNmYjE1ODRkZQ==\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic QUNlM2NlZTE2MWViNDM1YzE0NThhYmQ2YjAyNjc4ZTI0ZjoyMzJjNDkxMDUzYmIxMTAzMjMyYTYyZWNmYjE1ODRkZQ==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://chat.twilio.com/v2/Services/IS4450342d288b4f36bf624ae84d0537f8/Channels/CH8752782fd42447868618fe2bb199d4cb/Messages ",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "e02b5049-4ca2-4ea3-9025-1700a7fbd9a5",
+			"data": [
+				{
+					"key": "Body",
+					"value": "Hola todo mundo",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "https://chat.twilio.com/v2/Services/IS4450342d288b4f36bf624ae84d0537f8/Channels/CH8752782fd42447868618fe2bb199d4cb/Messages ",
+			"description": "Enviar mensaje",
+			"descriptionFormat": "html",
+			"time": 1550452600154,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "ACe3cee161eb435c1458abd6b02678e24f",
+				"password": "232c491053bb1103232a62ecfb1584de",
+				"saveToRequest": true
+			}
+		}
+	]
+}
